@@ -1,2 +1,5 @@
 # A2_LP
-Grupo formado por: Breno Russo, Tulio Koneçny, Ademir Tomas, Luigi, Granja
+Cientista de Dados - 
+Engenheiro de Software -
+Especialista em vizualização de dados -
+Especialista em garantia da qualidade -
