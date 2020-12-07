@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{
+\normalfont \normalsize 
+\textsc{EMAp - Escola de Matemática Aplicada \\ 
+Fundação Getúlio Vargas} \\
+[10pt] 
+\rule{\linewidth}{1pt} \\[6pt] 
+\huge A2 - Linguagem de Programação \\
+\rule{\linewidth}{1pt}  \\[6pt]
+}
+\author{Perguntas de Negócio}
+\date{\normalsize }
+
+\begin{document}
+
+\maketitle
+
+\section{UFC}
+\begin{itemize}
+\item Como ocorre a distribuição por classe de peso? A diferença de classe muda a quantidade de lutas ?
+\item Como ocorre a distribuição por gênero? Existe uma categoria que mulheres estão mais presentes que os homens?
+\item Ranking de quem mais ganhou e de quem mais disputou lutas.
+\item Sendo extremamente \textbf{improvável}, a cor do lutador(blue or red) influencia no resultado?
+\item Como as lutas terminam (Decision,TKO,Submission,KO).
+\item Altura/Peso médio de cada categoria.
+\item Qual os maiores Odds já registrados? Quantas vezes as pessoas mais prováveis ganharam? Existe uma relação com categoria?
+\item A torcida influencia de que maneira? Lutando no pais de origem influencia? Qual a relação com os TKO e KO?
+
+\end{itemize}
+
+\newpage
+\section{FIFA}
+\begin{itemize}
+    \item Como ocorre a distribuição de jogadores atuando pela sua respectiva nacionalidade? 
+    \item Sabe-se que o Overall de um time influência na probabilidade de vitória, empate ou derrota. Com isso, qual é o somatório de Overall dos jogadores por time?
+    \item Quantos jogadores possuem seu overall rating abaixo, acima e igual ao seu potencial esperado? E qual é o desvio padrão?
+    \item Qual a idade média dos jogadores e quantos desses jogadores atuam acima dessa idade?
+    \item Qual é a idade e Overall médio por time?
+    \item Qual é o Overall médio dos jogadores e seus respectivos valores de mercado associados?
+\end{itemize}
+
+\end{document}
