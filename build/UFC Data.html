@@ -1,0 +1,382 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Documentação UFC Data &mdash; documentação A2 LP </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/jquery.fancybox.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/glpi.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Índice"
+              href="genindex.html"/>
+        <link rel="search" title="Buscar" href="search.html"/>
+    <link rel="top" title="documentação A2 LP " href="index.html"/>
+        <link rel="next" title="Ajuda" href="Ajuda.html"/>
+        <link rel="prev" title="Documentação Data" href="Data.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> A2 LP
+          
+
+          
+          </a>
+
+          
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Conteúdo:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Data.html">Documentação Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Documentação UFC Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ajuda.html">Ajuda</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">A2 LP</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Documentação UFC Data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/UFC Data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="Ajuda.html" class="btn btn-neutral float-right" title="Ajuda" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Data.html" class="btn btn-neutral" title="Documentação Data" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-dataUFC">
+<span id="documentacao-ufc-data"></span><h1>Documentação UFC Data<a class="headerlink" href="#module-dataUFC" title="Link permanente para este título">¶</a></h1>
+<p>Módulo de refinamento da base de dados do UFC</p>
+<dl class="py data">
+<dt id="dataUFC.weights">
+<code class="sig-prename descclassname">dataUFC.</code><code class="sig-name descname">weights</code><em class="property"> = {'Bantamweight': 0, 'Catch Weight': 0, 'Featherweight': 0, 'Flyweight': 0, 'Heavyweight': 0, 'Light Heavyweight': 0, 'Lightweight': 0, 'Middleweight': 0, 'Welterweight': 0, &quot;Women's Bantamweight&quot;: 0, &quot;Women's Featherweight&quot;: 0, &quot;Women's Flyweight&quot;: 0, &quot;Women's Strawweight&quot;: 0}</em><a class="headerlink" href="#dataUFC.weights" title="Link permanente para esta definição">¶</a></dt>
+<dd><p>Número de lutadores por categoria</p>
+<dl>
+<dt>for key in weights.keys():</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;weight_class&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">key</span><span class="p">]</span>
+<span class="go">    names = data[&quot;R_fighter&quot;]</span>
+<span class="go">    names = names.append(data[&quot;B_fighter&quot;])</span>
+<span class="go">    weights[key] = len(names.value_counts())</span>
+</pre></div>
+</div>
+<p>Como a luta terminou, por ano</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">years</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2020</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2019</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2018</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2017</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2016</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2015</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2014</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2013</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2012</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2011</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="mi">2010</span><span class="p">:</span> <span class="s2">&quot;&quot;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<dl>
+<dt>for key in years.keys():</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="sa">rf</span><span class="s1">&#39;^</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)][</span><span class="s2">&quot;finish&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="go">    decision = int(data[&quot;U-DEC&quot;]) + int(data[&quot;S-DEC&quot;]) + int(data[&quot;M-DEC&quot;])</span>
+<span class="go">    submission = int(data[&quot;SUB&quot;])</span>
+<span class="go">    knockout = int(data[&quot;KO/TKO&quot;])</span>
+<span class="go">    total = decision + submission + knockout</span>
+<span class="go">    years[key] = {&quot;DEC&quot;: round(decision/total, 2), &quot;SUB&quot;: round(submission/total, 2), &quot;KO/TKO&quot;: round(knockout/total, 2)}</span>
+</pre></div>
+</div>
+<p>Top 10 geral Feminino e Masculino (mais vitórias)</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_M</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;gender&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;MALE&quot;</span><span class="p">]</span>
+<span class="go">    data_M_blue = data_M.loc[df[&quot;Winner&quot;] == &quot;Blue&quot;]</span>
+<span class="go">    data_M_red = data_M.loc[df[&quot;Winner&quot;] == &quot;Red&quot;]</span>
+<span class="go">    data_M_winners = data_M_blue[&quot;B_fighter&quot;].append(data_M_red[&quot;R_fighter&quot;])</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ranking_M</span> <span class="o">=</span> <span class="n">data_M_winners</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_F</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;gender&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;FEMALE&quot;</span><span class="p">]</span>
+<span class="go">    data_F_blue = data_F.loc[df[&quot;Winner&quot;] == &quot;Blue&quot;]</span>
+<span class="go">    data_F_red = data_F.loc[df[&quot;Winner&quot;] == &quot;Red&quot;]</span>
+<span class="go">    data_F_winners = data_F_blue[&quot;B_fighter&quot;].append(data_F_red[&quot;R_fighter&quot;])</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ranking_F</span> <span class="o">=</span> <span class="n">data_F_winners</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Top 10 geral Feminino e Masculino (mais disputas)</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_M</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;gender&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;MALE&quot;</span><span class="p">]</span>
+<span class="go">    data_M_fighters = data_M[&quot;B_fighter&quot;].append(data_M[&quot;R_fighter&quot;])</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">male_most_fights</span> <span class="o">=</span>  <span class="n">data_M_fighters</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_F</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;gender&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;FEMALE&quot;</span><span class="p">]</span>
+<span class="go">    data_F_fighters = data_F[&quot;B_fighter&quot;].append(data_F[&quot;R_fighter&quot;])</span>
+<span class="go">    female_most_fights =  data_F_fighters.value_counts()[:10]</span>
+</pre></div>
+</div>
+<p>Distribuição do número de vitórias por lutadores</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dist_M</span> <span class="o">=</span> <span class="n">data_M_winners</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="go">    dist_F = data_F_winners.value_counts().value_counts().sort_index(ascending = False)</span>
+</pre></div>
+</div>
+<p>Altura e peso médio</p>
+<p>peso médio em kilos</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">class_weight</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Flyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Bantamweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Featherweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Lightweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span><span class="s2">&quot;Welterweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Middleweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Light Heavyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Heavyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>  <span class="s2">&quot;Women&#39;s Strawweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Flyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Bantamweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Strawweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Featherweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</pre></div>
+</div>
+<dl>
+<dt>for weight in class_weight.keys():</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;weight_class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="sa">rf</span><span class="s1">&#39;^</span><span class="si">{</span><span class="n">weight</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)]</span>
+<span class="go">    total_weight = data[&quot;B_Weight_lbs&quot;].append(data[&quot;R_Weight_lbs&quot;])</span>
+<span class="go">    mean = total_weight.mean()</span>
+<span class="go">    mean *= 0.454 #converte de libras para kilogramas</span>
+<span class="go">    class_weight[weight] = round(mean, 2)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>altura média em m</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">class_height</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Flyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Bantamweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Featherweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Lightweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span><span class="s2">&quot;Welterweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Middleweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Light Heavyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Heavyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>  <span class="s2">&quot;Women&#39;s Strawweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Flyweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Bantamweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Strawweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Women&#39;s Featherweight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</pre></div>
+</div>
+<dl>
+<dt>for height in class_height.keys():</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;weight_class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="sa">rf</span><span class="s1">&#39;^</span><span class="si">{</span><span class="n">height</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)]</span>
+<span class="go">    total_height = data[&quot;B_Height_cms&quot;].append(data[&quot;R_Height_cms&quot;])</span>
+<span class="go">    mean = total_height.mean()</span>
+<span class="go">    class_height[height] = round(mean / 100, 2)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>Como a luta terminou (com e sem torcida)</p>
+<p>com torcida</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_torcida</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;empty_arena&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">False</span><span class="p">][</span><span class="s2">&quot;finish&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">torcida_decision</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data_torcida</span><span class="p">[</span><span class="s2">&quot;U-DEC&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data_torcida</span><span class="p">[</span><span class="s2">&quot;S-DEC&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data_torcida</span><span class="p">[</span><span class="s2">&quot;M-DEC&quot;</span><span class="p">])</span>
+<span class="go">    torcida_submission = int(data_torcida[&quot;SUB&quot;])</span>
+<span class="go">    torcida_knockout = int(data_torcida[&quot;KO/TKO&quot;])</span>
+<span class="go">    torcida_total = torcida_decision + torcida_submission + torcida_knockout</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">torcida</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;DEC&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">torcida_decision</span> <span class="o">/</span> <span class="n">torcida_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;SUB&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">torcida_submission</span> <span class="o">/</span> <span class="n">torcida_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;KO/TKO&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">torcida_knockout</span> <span class="o">/</span> <span class="n">torcida_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">)}</span>
+<span class="go">    print(&quot;Como a luta terminou, com torcida)&quot;)</span>
+<span class="go">    print(torcida)</span>
+</pre></div>
+</div>
+<p>sem torcida</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_vazio</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;empty_arena&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">][</span><span class="s2">&quot;finish&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vazio_decision</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data_vazio</span><span class="p">[</span><span class="s2">&quot;U-DEC&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data_vazio</span><span class="p">[</span><span class="s2">&quot;S-DEC&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data_vazio</span><span class="p">[</span><span class="s2">&quot;M-DEC&quot;</span><span class="p">])</span>
+<span class="go">    vazio_submission = int(data_vazio[&quot;SUB&quot;])</span>
+<span class="go">    vazio_knockout = int(data_vazio[&quot;KO/TKO&quot;])</span>
+<span class="go">    vazio_total = vazio_decision + vazio_submission + vazio_knockout</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">torcida</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;DEC&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">vazio_decision</span> <span class="o">/</span> <span class="n">vazio_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;SUB&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">vazio_submission</span> <span class="o">/</span> <span class="n">vazio_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;KO/TKO&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">vazio_knockout</span> <span class="o">/</span> <span class="n">vazio_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">)}</span>
+<span class="go">    print(&quot;Como a luta terminou, sem torcida)&quot;)</span>
+<span class="go">    print(torcida)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Ajuda.html" class="btn btn-neutral float-right" title="Ajuda" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Data.html" class="btn btn-neutral" title="Documentação Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Luigi,Ademir,Tulio,Breno,Granja.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'pt_BR',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="_static/jquery.fancybox.min.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+  <script type="text/javascript">
+    $(function(){
+      $('.image-reference').fancybox();
+    })
+  </script>
+
+</body>
+</html>

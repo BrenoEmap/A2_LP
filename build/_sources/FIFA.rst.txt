@@ -1,0 +1,6 @@
+Documentação de refinamento da base de dados do FIFA 19
+=======================================================
+.. automodule:: datapolishFIFA
+   :members:
+   :undoc-members:
+   :show-inheritance:

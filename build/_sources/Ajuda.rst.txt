@@ -1,0 +1,6 @@
+Ajuda
+=====  
+.. image:: ajuda.png
+   :width: 600
+
+e-mail: luigimezzogori1@gmail.com

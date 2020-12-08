@@ -1,0 +1,21 @@
+Bem vindo a documentação A2 LP!
+===============================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Conteúdo:
+	
+   Data
+   UFC Data
+   FIFA
+   Ajuda
+   
+
+
+
+Outras Informações
+==================	
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

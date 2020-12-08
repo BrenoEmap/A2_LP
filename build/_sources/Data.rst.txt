@@ -1,0 +1,7 @@
+Documentação Data
+=================
+
+.. automodule:: data
+   :members:
+   :undoc-members:
+   :show-inheritance:
