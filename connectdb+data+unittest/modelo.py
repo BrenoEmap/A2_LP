@@ -94,20 +94,25 @@ def preditor(blue_fighter, red_fighter):
     data_red = dropdata.loc[dropdata["R_fighter"] == red_fighter].append(dropdata.loc[dropdata["B_fighter"] == red_fighter]).iloc[0]
     result_blue = 0
     result_red = 0
-    
+    print(data_blue)
+    print(data_red)
     if data_blue["R_fighter"] == blue_fighter:
         for i in corr4[1:].index:
-            result_blue += data_blue[i] * corr4[i]
+            if not np.isnan(data_blue[i] * corr4[i]):
+                result_blue += data_blue[i] * corr4[i]
+              
     if data_blue["B_fighter"] == blue_fighter:
         for i in corr2[1:].index:
-            result_blue += data_blue[i] * corr2[i]
+            if not np.isnan(data_blue[i] * corr2[i]):
+                result_blue += data_blue[i] * corr2[i]
     if data_red["R_fighter"] == red_fighter:
         for i in corr4[1:].index:
-            result_red += data_red[i] * corr4[i]
+            if not np.isnan(data_red[i] * corr4[i]):
+                result_red += data_red[i] * corr4[i]
     if data_red["B_fighter"] == red_fighter:
         for i in corr2[1:].index:
-            result_red += data_red[i] * corr2[i]
-    
+            if not np.isnan(data_red[i] * corr2[i]):
+                result_red += data_red[i] * corr2[i]
     if result_red > result_blue:
         print(f"Prevemos que o lutador {red_fighter} ganhe.")
     if result_red < result_blue:
@@ -116,13 +121,9 @@ def preditor(blue_fighter, red_fighter):
         print("Não faremos previsões para essa luta")
         
             
-# Façamos a previsão do último evento do UFC (não está no database)
-# https://www.ufc.com.br/event/ufc-fight-night-december-05-2020
 
-# Jack Hermansson (vermelho) x Marvin Vettori (azul)
-print(preditor("Marvin Vettori", "Jack Hermansson"))
 
-print("O algoritmo previu a vitória de Jack Hermansson, o que não ocorreu.\n")
 
-# Ovince Saint-Preux (vermelho) x Jamahal Hill
-print((preditor("Marvin Vettori", "Jack Hermansson")))
+
+    
+    
