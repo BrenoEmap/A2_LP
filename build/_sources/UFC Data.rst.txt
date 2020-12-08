@@ -1,0 +1,6 @@
+Documentação UFC Data
+=====================
+.. automodule:: dataUFC
+   :members:
+   :undoc-members:
+   :show-inheritance:

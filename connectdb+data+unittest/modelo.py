@@ -125,3 +125,4 @@ print(preditor("Marvin Vettori", "Jack Hermansson"))
 print("O algoritmo previu a vitória de Jack Hermansson, o que não ocorreu.\n")
 
 # Ovince Saint-Preux (vermelho) x Jamahal Hill
+print((preditor("Marvin Vettori", "Jack Hermansson")))
