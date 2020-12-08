@@ -7,11 +7,15 @@
 Fundação Getúlio Vargas} \\
 [10pt] 
 \rule{\linewidth}{1pt} \\[6pt] 
-\huge A2 - Linguagem de Programação \\
+\huge Perguntas de Negócio \\
 \rule{\linewidth}{1pt}  \\[6pt]
 }
-\author{Perguntas de Negócio}
-\date{\normalsize }
+\author{Breno Russo Guedes, Cientista de Dados\\
+Ademir Tomaz, Engenheiro de Dados\\
+Luiz Antônio Granja, Engenheiro de Dados\\
+Tulio Koneçny, Especialista em Visualização de Dados\\
+Luigi Mezzogori, Especialista de Garantia da Qualidade\\}
+\date{\normalsize {Dezembro, 2020}}
 
 \begin{document}
 
@@ -35,10 +39,10 @@ Fundação Getúlio Vargas} \\
 \begin{itemize}
     \item Como ocorre a distribuição de jogadores atuando pela sua respectiva nacionalidade? 
     \item Sabe-se que o Overall de um time influência na probabilidade de vitória, empate ou derrota. Com isso, qual é o somatório médio de Overall dos jogadores por time?
-    \item Quantos jogadores possuem seu overall rating abaixo, acima e igual ao seu potencial esperado? E qual é o desvio padrão?
+    \item Quantos jogadores possuem seu overall rating abaixo, acima e igual ao seu potencial esperado? E qual é o desvio padrão de Overall?
     \item Qual a idade média dos jogadores e quantos desses jogadores atuam acima dessa idade?
     \item Qual é a idade média por time?
-    \item Qual é o Overall médio dos jogadores e seus respectivos valores de mercado associados?
+    \item Como ocorre a distribuição de jogadores canhotos e destros por posição?
 \end{itemize}
 
 \end{document}
